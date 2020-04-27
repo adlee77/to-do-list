@@ -1,0 +1,82 @@
+body {
+    background-color: #61DBFB;
+}
+.container {
+    background-color: #393F49;
+    height: 800px;
+}
+.hoverTask {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border-radius: 3px;
+}
+#tasks, #date{
+    position: relative;
+    top: 20%;
+    color: #ffffff
+}
+h3 {
+    position: relative;
+    top: 20%;
+}
+.gray {
+    position: relative;
+    top: 20%;
+    color: #646971
+}
+#compTasks {
+    position: relative;
+    top: 20%;
+    color: #646971
+}
+p {
+    position: relative;
+    top: 30%;
+    color: #61DBFB;
+}
+.tasks {
+    font-size: larger;
+    border-bottom: solid;
+    border-color: #646971;
+    padding-bottom: 2.5%;
+    padding-top: 5%;
+}
+#button {
+    background-color: #61DBFB;
+    border: none;
+    color: #ffffff;
+}
+#entries {
+    color: #ffffff;
+}
+.rowForm {
+    border-bottom: solid;
+    border-color: #646971;
+    padding-bottom: 3%;
+}
+.fa-check-circle {
+    position: relative;
+    right: 0%;
+    top: 7px;
+    color: white;
+}
+.fa-repeat {
+    position: relative;
+    right: 0%;
+    top: 7px;
+    color: #646971;
+}
+#alert {
+    position: relative;
+    color: red;
+    bottom: 4%;
+}
+.fa-trash-o {
+    position: static;
+    left: 85%;
+    top: 30%;
+    color: #646971;
+}

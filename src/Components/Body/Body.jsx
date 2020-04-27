@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoItems from "../ToDoItems/ToDoItems";
 import moment from 'moment';
-import './Incomplete.css'
+import './Body.css'
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
         this.switchTabsTwo = this.switchTabsTwo.bind(this)
     }
     deleteItemInc(key) {
-        var filteredItems = this.state.items.filter(function (item) {
+        let filteredItems = this.state.items.filter(function (item) {
             return (item.key !== key)
         })
         this.setState({
@@ -32,7 +32,7 @@ class SearchBar extends React.Component {
         this.state.count = this.state.items.length - 1
     }
     deleteItemComp(key) {
-        var completedItems = this.state.completed_items.filter(function (item) {
+        let completedItems = this.state.completed_items.filter(function (item) {
             return (item.key !== key)
         })
         console.log(completedItems)
@@ -42,10 +42,10 @@ class SearchBar extends React.Component {
         this.state.count_completed = this.state.completed_items.length - 1
     }
     completeItem(key) {
-        var filteredItems = this.state.items.filter(function (item) {
+        let filteredItems = this.state.items.filter(function (item) {
             return (item.key !== key)
         })
-        var completedItems = this.state.items.filter(function (item) {
+        let completedItems = this.state.items.filter(function (item) {
             return (item.key === key)
         })
         this.setState((prevState) => {
@@ -59,10 +59,10 @@ class SearchBar extends React.Component {
         this.state.count_completed = this.state.completed_items.length + 1
     }
     redoItem(key) {
-        var filteredItems = this.state.completed_items.filter(function (item) {
+        let filteredItems = this.state.completed_items.filter(function (item) {
             return (item.key === key)
         })
-        var completedItems = this.state.completed_items.filter(function (item) {
+        let completedItems = this.state.completed_items.filter(function (item) {
             return (item.key !== key)
         })
         this.setState((prevState) => {
@@ -86,7 +86,7 @@ class SearchBar extends React.Component {
     }
     addItem(e) {
         if (this._inputElement.value !== "") {
-            var newItem = {
+            let newItem = {
                 text: this._inputElement.value,
                 key: Date.now()
             };

@@ -34,9 +34,9 @@ class ToDoItems extends React.Component {
     }
 
     render() {
-        var todoEntries = this.props.entries;
-        var listItems = todoEntries.map(this.createTasks);
-        var listItemsComp = todoEntries.map(this.createTasksReturn);
+        let todoEntries = this.props.entries;
+        let listItems = todoEntries.map(this.createTasks);
+        let listItemsComp = todoEntries.map(this.createTasksReturn);
         return (this.props.page ?
             <ul className="theList">
                 {listItems}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import SearchBar from '../Incomplete/Incomplete'
+import SearchBar from '../Body/Body'
 // import Complete from '../Tabs/Complete'
 
 

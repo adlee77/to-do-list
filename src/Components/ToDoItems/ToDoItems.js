@@ -22,7 +22,7 @@ class ToDoItems extends React.Component {
         <del>
         <ul id="compTasks" key={item.key}>{item.text}</ul>
         </del>
-        <i class="fa fa-trash-o fa-lg" onClick={() =>this.delete(item.key)} style={{position: 'absolute'}}></i>
+        <i class="fa fa-trash-o fa-lg" onClick={() =>this.delete(item.key)}></i>
         </div>
          )}
         

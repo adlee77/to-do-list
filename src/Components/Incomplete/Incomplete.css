@@ -75,8 +75,8 @@ p {
     bottom: 4%;
 }
 .fa-trash-o {
-    position: static;
+    position: relative;
     left: 85%;
-    top: 30%;
+    top: 5px;
     color: #646971;
 }

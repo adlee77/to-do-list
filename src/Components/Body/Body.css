@@ -59,7 +59,6 @@ p {
 }
 .fa-check-circle {
     position: relative;
-    right: 0%;
     top: 7px;
     color: white;
 }
@@ -76,7 +75,7 @@ p {
 }
 .fa-trash-o {
     position: relative;
-    left: 85%;
-    top: 5px;
+    /* left: 85%;
+    top: 5px; */
     color: #646971;
 }

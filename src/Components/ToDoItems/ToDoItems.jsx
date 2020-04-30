@@ -9,20 +9,34 @@ class ToDoItems extends React.Component {
     }
     createTasks(item) {
         return (
-        <div className="row tasks">
+        <div className="tasks">
+        <div className="row">
+        <div className="col-1">
         <i className="fa fa-check-circle fa-lg" onClick={() =>this.complete(item.key)}></i>
+        </div>
+        <div className="col-9">
         <ul id="tasks" key={item.key}>{item.text}</ul>
+        </div>
+        <div className="col-2">
         <i class="fa fa-trash-o fa-lg" onClick={() =>this.delete(item.key)}></i>
+        </div>
+        </div>
         </div>
         )}
     createTasksReturn(item) {
         return (
-        <div className="row tasks">
+        <div className="tasks">
+        <div className="row">
+        <div className="col-1">
         <i className="fa fa-repeat fa-lg" onClick={() =>this.complete(item.key)}></i>
-        <del>
-        <ul id="compTasks" key={item.key}>{item.text}</ul>
-        </del>
+        </div>
+        <div className="col-9">
+        <ul id="tasks" key={item.key}>{item.text}</ul>
+        </div>
+        <div className="col-2">
         <i class="fa fa-trash-o fa-lg" onClick={() =>this.delete(item.key)}></i>
+        </div>
+        </div>
         </div>
          )}
         
